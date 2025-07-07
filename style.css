@@ -378,3 +378,128 @@ button:hover {
 .contact-heading span {
   color: #44caff;
 }
+
+/* --Responsive Design -- */
+
+@media (max-width: 1024px) {
+  nav {
+    gap: 20%;
+    font-size: 16px;
+  }
+
+  .hometext h1 {
+    font-size: 45px;
+  }
+
+  .hometext h3 {
+    font-size: 20px;
+  }
+
+  .projects {
+    width: 90%;
+  }
+
+  .certificate1 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav2 ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .hometext, .homeimg {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .hometext h1 {
+    font-size: 36px;
+  }
+
+  .hometext h3 {
+    font-size: 18px;
+  }
+
+  .contactbtn {
+    margin: 20px auto;
+  }
+
+  .icon {
+    margin: 20px auto;
+  }
+
+  .about, .education, .projects, .certificates, .contact {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .edu1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .project1 video {
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hometext h1 {
+    font-size: 28px;
+  }
+
+  .hometext h3 {
+    font-size: 16px;
+  }
+
+  .hometext p {
+    font-size: 14px;
+  }
+
+  .homeimg {
+    width: 80%;
+    height: auto;
+  }
+
+  .certificate1 p {
+    font-size: 20px;
+  }
+
+  .certificate1 img {
+    width: 100%;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+  }
+
+  input, textarea {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
