@@ -1,36 +1,33 @@
-// ✅ Link hover effect (e.g., About, Education, etc.)
 document.querySelectorAll("li a").forEach(link => {
   link.addEventListener("mouseover", function () {
-    this.style.color = "rgb(68, 202, 255)";  // Highlight on hover
+    this.style.color = "rgb(68, 202, 255)";  // change link color
   });
 
   link.addEventListener("mouseout", function () {
-    this.style.color = "";  // Reset on mouse out
+    this.style.color = "";
   });
 });
-
-// ✅ Social icons hover effect (LinkedIn, GitHub, Instagram)
 var iconDivs = document.getElementsByClassName("icon");
 
 for (let i = 0; i < iconDivs.length; i++) {
   iconDivs[i].addEventListener("mouseover", function () {
-    const icon = this.querySelector("i");  // Find icon inside
+    // Target the <i> inside the <a> inside this .icon div
+    const icon = this.querySelector("i");
     if (icon) {
-      icon.style.color = "rgb(0, 0, 0)";  // Icon turns black
-      this.style.backgroundColor = "white";  // Background turns white
+      icon.style.color = "rgb(0, 0, 0)";
+      this.style.backgroundColor = "white"; // Optional: background for div
     }
   });
 
   iconDivs[i].addEventListener("mouseout", function () {
     const icon = this.querySelector("i");
     if (icon) {
-      icon.style.color = "";  // Reset icon color
-      this.style.backgroundColor = "";  // Reset background
+      icon.style.color = ""; // reset
+      this.style.backgroundColor = ""; // reset
     }
   });
 }
 
-// ✅ Mobile Menu Toggle (hamburger menu)
-function toggleDrawer() {
-  document.querySelector(".nav2 ul").classList.toggle("show");  // Show/hide nav
-}
+ function toggleDrawer() {
+    document.querySelector(".nav2 ul").classList.toggle("show");
+  }
