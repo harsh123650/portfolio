@@ -23,9 +23,6 @@ body {
     /* flex-direction: column; */
 }
 
-
-
-
 nav {
     justify-content: center;
     align-items: center;
@@ -38,63 +35,20 @@ nav {
     font-weight: 500;
 }
 
-/* Left side title */
 .nav1 li {
-  font-size: 23px;
-  font-weight: bold;
-  list-style: none;
-  color: white;
+    font-size: 23px;
 }
 
-/* Just in case you have links in nav1 (though not needed usually) */
-.nav1 ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav1 ul li a:hover {
-  color: #44caff;
-}
-
-.nav1 ul li a:visited {
-  color: white;
-}
-
-/* Right side navigation links */
 .nav2 ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    gap: 20px;
 }
-
-.nav2 ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.nav2 ul li a:hover {
-  color: #44caff;
-}
-
-.nav2 ul li a:visited {
-  color: white;
-}
-.menu-icon {
-  display: none;
-}
-
-
 
 .home {
-    height: 600px;
+    height: 500px;
     /* background-color: rgb(135, 222, 205); */
     display: flex;
-    gap: px;
+    gap: 70px;
 }
 
 .hometext {
@@ -107,7 +61,7 @@ nav {
 
 .homeimg {
     width: 20%;
-    height: 60%;
+    height: 80%;
     box-shadow: 0 8px 20px rgba(127, 204, 234, 0.5); /* soft sky-blue shadow */
     border-radius: 30px;
     overflow: hidden;
@@ -144,19 +98,18 @@ nav {
 
 
 .hometext h1 {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .hometext h3 {
-    font-size: 25px;
+    font-size: 21px;
     color: rgb(68, 202, 255);
     margin-bottom: 20px;
 }
 
 .hometext p {
-    font-weight: 800;
-    margin-bottom: 50px;
-    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
 }
 
 .contactbtn {
@@ -167,10 +120,7 @@ nav {
     font-size: 22px;
     font-weight: 600;
     border-radius: 10px;
-    margin-bottom: 0px;
-    margin-top: 200px;
-    margin-right:px;
-    
+    margin-bottom: 70px;
 }
 
 .contactbtn button {
@@ -179,7 +129,6 @@ nav {
     border: none;
     font-size: 12px;
     font-weight: 600;
-    
 }
 
 .homeicon {
@@ -198,36 +147,27 @@ nav {
     border: 2px solid rgb(68, 202, 255);
     /* background-color:rgb(68, 202, 255) ; */
     border-radius: 50%;
-    margin-bottom: 0px;
-    margin-top: 200px;
-    margin-right:0px;
-    padding-right: 0%;
-    
 }
 
 .about {
     /* margin-top: 60px; */
-    height: 500px;
+    height: 350px;
     /* background: #01000e;
     background: linear-gradient(182deg, rgb(23, 35, 69) 0%, rgba(7, 7, 40, 0.888) 100%); */
 }
 
 .about {
-    padding: 90px;
+    padding: 50px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 25px;
 }
 
-
 .about p {
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
-    font-weight: 800;
-    font-size: 18px;
-    justify-content:center;
+    font-weight: 500;
 }
 
 .education {
@@ -238,7 +178,6 @@ nav {
     flex-direction: column;
     justify-content: start;
     gap: 50px;
-    
 
 }
 
@@ -256,13 +195,10 @@ nav {
     margin-top: 10px;
 }
 .projects{
-  margin-top: 200px;
     height: 800px;
     width: 80%;
     gap: 70px;
     flex-direction: column;
-    font-size: 25px;
-   
    
 }
 .projects .project1{
@@ -283,13 +219,11 @@ nav {
     margin-bottom: 25px;
 }
 .certificates{
-    
+    margin-top: 80px;
     height: fit-content;
     width: 70%;
     gap: 70px;
     flex-direction: column;
-    font-size: 25px;
-    margin-top: 200px;
     /* background-color: brown; */
 }
 .certificate1{
@@ -315,191 +249,193 @@ nav {
     flex-direction: column;
     gap: 40px;
 }
-form {
-  
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin: auto;
-  padding: 20px 0;
-  color: #fff;
+form{
+    width: 60%;
+     flex-direction: column;
+      color: rgb(255, 255, 255);
+      /* background-color: blue; */
+      display: flex; 
+       flex-wrap: wrap;
 }
-
-input,
-textarea {
-  padding: 12px 15px;
-  font-size: 14px;
-  border-radius: 10px;
-  border: 1px solid #44caff;
-  background: none;
-  color: #ffffff;
-  outline: none;
-  transition: 0.3s;
+input{
+    margin: 5px;
+    padding: 10px;
+    height: 45px;
+    /* width: 40%; */
+    margin-left: 20px;
+      font-size: 14px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background: none;
+     border: 1px solid rgb(68, 202, 255);
 }
-
-input:focus,
-textarea:focus {
-  border-color: #00bfff;
-  box-shadow: 0 0 8px #44caff50;
-}
-
-textarea.txt {
+.txt{
   height: 130px;
-  resize: none;
 }
-
-button {
-  height: 45px;
-  border-radius: 10px;
-  background-color: #44caff;
-  color: black;
-  font-weight: 600;
-  font-size: 15px;
-  border: none;
+button{
+     height: 45px;
+      border-radius: 10px;
+     color: black;
+     font-weight: 600;
+     background-color: rgb(68, 202, 255);
+}
+li a , .icon a{
+text-decoration: none;
+color: white;
+}
+.menu-icon {
+  display: none;
+  font-size: 2rem;
   cursor: pointer;
-  transition: background 0.3s;
+  color: #44caff; /* Sky blue color */
+
 }
 
-button:hover {
-  background-color: #29b3e3;
-}
 
-/* Center heading */
-.contact-heading {
-  margin-top: 200px;
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: white;
-}
+ @media (max-width: 1024px) {
+      .home {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 20px;
+      }
 
-.contact-heading span {
+      .hometext, .homeimg {
+        width: 90%;
+      }
+
+      nav {
+        /* flex-direction: column; */
+        gap: 90px;
+        height: auto;
+        padding: 10px 0;
+      }
+
+      .nav2 ul {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 10px;
+      }
+
+      .education, .projects, .certificates, .contact, .about {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .education {
+        height: auto;
+      }
+
+      .edu1 {
+        width: 100%;
+        height: auto;
+      }
+
+      .projects {
+        height: auto;
+      }
+
+      .project1 video {
+        height: auto;
+      }
+
+      .certificate1 img {
+        width: 100%;
+      }
+
+      form {
+        width: 90%;
+        margin: auto;
+      }
+
+      input, .txt, button {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
   color: #44caff;
+ 
 }
 
-/* --Responsive Design -- */
 
-@media (max-width: 1024px) {
-  nav {
-    gap: 20%;
-    font-size: 16px;
-  }
 
-  .hometext h1 {
-    font-size: 45px;
-  }
 
-  .hometext h3 {
-    font-size: 20px;
-  }
 
-  .projects {
-    width: 90%;
-  }
-
-  .certificate1 img {
-    width: 100%;
-  }
+.nav1 li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  list-style: none;
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    gap: 10px;
-    text-align: center;
-  }
+
+
+.nav2 ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav2 ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  /* color: #333; */
+}
+
+/* Responsive: Mobile styles */
+@media (max-width: 500px) {
+    nav{
+        flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* padding: 10px; */
+        display: flex;
+        /* width: 100%; */
+        /* background: rgb(211, 46, 46); */
+    }
 
   .nav2 ul {
+    display: none;
     flex-direction: column;
+    background-color: rgb(0, 148, 206);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    color: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+  }
+.nav2 ul li {
+     color: #020024;
+
+}
+  .nav2 ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    color: white;
+/* background-color: aqua; */
+    display: block;
+  }
+
+  .hometext{
     gap: 10px;
   }
-
-  .home {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
+  .hometext h3{
+   font-size: 22px;
   }
-
-  .hometext, .homeimg {
-    width: 90%;
-    margin: 20px 0;
+  .about{
+    height: fit-content;
+    /* background-color: aquamarine; */
   }
-
-  .hometext h1 {
-    font-size: 36px;
+  .about p{
+font-size: 20px;
   }
-
-  .hometext h3 {
-    font-size: 18px;
-  }
-
-  .contactbtn {
-    margin: 20px auto;
-  }
-
-  .icon {
-    margin: 20px auto;
-  }
-
-  .about, .education, .projects, .certificates, .contact {
-    padding: 20px;
-    width: 100%;
-    height: auto;
-  }
-
-  .edu1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .project1 video {
-    height: auto;
-  }
-
-  form {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hometext h1 {
-    font-size: 28px;
-  }
-
-  .hometext h3 {
-    font-size: 16px;
-  }
-
-  .hometext p {
-    font-size: 14px;
-  }
-
-  .homeimg {
-    width: 80%;
-    height: auto;
-  }
-
-  .certificate1 p {
-    font-size: 20px;
-  }
-
-  .certificate1 img {
-    width: 100%;
-  }
-
-  .contact-heading {
-    font-size: 24px;
-  }
-
-  input, textarea {
-    font-size: 13px;
-  }
-
-  button {
-    font-size: 14px;
-  }
+ 
 }
